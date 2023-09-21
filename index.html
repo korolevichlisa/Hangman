@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="js/wordList.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="game-modal">
+      <div class="content">
+        <div class="fail">
+          <div
+            class="tenor-gif-embed"
+            data-postid="18947879"
+            data-share-method="host"
+            data-aspect-ratio="1.29555"
+            data-width="100%"
+          >
+            <a
+              href="https://tenor.com/view/celebration-confetti-happy-success-cat-gif-18947879"
+            >
+              Celebration Confetti GIF</a
+            >
+            from
+            <a href="https://tenor.com/search/celebration-gifs"
+              >Celebration GIFs</a
+            >
+          </div>
+          <script
+            type="text/javascript"
+            async
+            src="https://tenor.com/embed.js"
+          ></script>
+        </div>
+        <div class="success">
+          <div
+            class="tenor-gif-embed"
+            data-postid="25853094"
+            data-share-method="host"
+            data-aspect-ratio="1.31148"
+            data-width="100%"
+          >
+            <a
+              href="https://tenor.com/view/sad-sad-spongebob-gif-sad-spongebob-spongebob-gif-25853094"
+              >Sad Sad Spongebob Gif GIF</a
+            >from <a href="https://tenor.com/search/sad-gifs">Sad GIFs</a>
+          </div>
+          <script
+            type="text/javascript"
+            async
+            src="https://tenor.com/embed.js"
+          ></script>
+        </div>
+        <h4>Game Over</h4>
+        <p>The correct word was: <span></span></p>
+        <button class="play-again">Play again</button>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Hangman Game</h1>
+      <div class="container-game">
+        <div class="hangman_pic">
+          <canvas id="hangman" width="180" height="250"></canvas>
+        </div>
+        <div class="game-box">
+          <ul class="word-display">
+            <li class="letter"></li>
+            <li class="letter"></li>
+            <li class="letter"></li>
+            <li class="letter"></li>
+            <li class="letter"></li>
+            <li class="letter"></li>
+            <li class="letter"></li>
+          </ul>
+          <h4 class="hint-text">
+            Hint
+            <b id="text"></b>
+          </h4>
+          <h4 class="guesses-text">
+            Incorect
+            <b>0/6</b>
+          </h4>
+          <div class="keyboard">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
