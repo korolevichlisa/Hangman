@@ -19,7 +19,8 @@ body{
   width: 850px;
   height: 600px;
   background: #fff;
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   padding: 60px 40px;
   border-radius: 10px;
@@ -38,7 +39,8 @@ h1{
 }
 
 .hangman_pic{
-  height: 600px;
+  /* height: 350px; */
+  /* width: 180px; */
 }
 
 canvas{
@@ -186,12 +188,41 @@ canvas{
 
 @media(max-width:782px){
   .container{
+    height: 600px;
+    width: 320px;
+  }
+  
+  h1{
+    margin: 10px;
+    font-size: 1.7rem;
+
+  }
+  .container-game{
     flex-direction: column;
-    padding: 30px 25px;
+    padding: 5px 15px;
     align-items: center;
+    max-width: 650px;
   }
   .hangman_pic canvas{
-    max-width: 200px;
+    max-width: 130px;
+    margin-bottom: 10px;
+  }
+
+
+
+.game-box h4 {
+  font-size: 1rem;
+}
+
+  .game-box .keyboard{
+    gap:2px;
+    margin-top: 0;
+  }
+
+  :where(.game-modal, .keyboard) button{
+    background-color: #5e63ba;
+    font-size: 1.2rem;
+    margin: 5px;  
   }
   
 }
