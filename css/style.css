@@ -208,7 +208,15 @@ canvas{
     margin-bottom: 10px;
   }
 
+ .word-display{
+    gap: 5px;
+  }
 
+  .word-display .letter{
+    width: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
 
 .game-box h4 {
   font-size: 1rem;
