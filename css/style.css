@@ -232,5 +232,10 @@ canvas{
     font-size: 1.2rem;
     margin: 5px;  
   }
+
+  .keyboard button{
+  width: 300px;
+  
+}
   
 }
