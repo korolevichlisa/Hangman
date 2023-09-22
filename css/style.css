@@ -188,8 +188,8 @@ canvas{
 
 @media(max-width:782px){
   .container{
-    height: 600px;
-    width: 320px;
+    height: 640px;
+    width: 350px;
   }
   
   h1{
